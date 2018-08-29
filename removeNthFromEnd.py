@@ -7,7 +7,7 @@ class ListNode:
 
 # Challenge: Remove the nth element from the end of a linked list in only one pass through
 
-def removeNthFromEnd(self, head, n):
+def removeNthFromEnd(head, n):
     """
     :type head: ListNode
     :type n: int

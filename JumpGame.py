@@ -24,3 +24,7 @@ def canJump(self, nums):
         index+=1
     
     return(index == leng)
+
+
+# Time Complexity O(n)
+# Space Complexity O(1)

@@ -41,4 +41,4 @@ def recursSpiralOrder(self, previous, matrix):
             left = [layer[0]] + left
             newermat += [layer[1:-1]]
         outerlist = previous + top + right + bottom + left
-        return(self.recursSpiralOrder(outerlist, newermat)) # Tail-Recursion
+        return(self.recursSpiralOrder(outerlist, newermat))

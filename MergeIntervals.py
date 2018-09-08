@@ -8,7 +8,7 @@ class Interval:
         self.start = s
         self.end = e
 
-def merge(self, intervals):
+def merge(intervals):
     """
     :type intervals: List[Interval]
     :rtype: List[Interval]

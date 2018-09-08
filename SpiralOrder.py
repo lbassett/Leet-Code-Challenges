@@ -1,7 +1,7 @@
 # Challenge: Spiral matrix
 # Given an mxn matrix, return a list of the elements going clockwise in
 
-def spiralOrder(self, matrix):
+def spiralOrder(matrix):
     """
     :type matrix: List[List[int]]
     :rtype: List[int]
@@ -9,9 +9,9 @@ def spiralOrder(self, matrix):
     if matrix == []:
         return([])
     else:
-        return(self.recursSpiralOrder([], matrix))
+        return(recursSpiralOrder([], matrix))
     
-def recursSpiralOrder(self, previous, matrix):
+def recursSpiralOrder(previous, matrix):
     if len(matrix) == 1:
         retlist = previous + matrix[0]
         return(retlist)
@@ -41,4 +41,4 @@ def recursSpiralOrder(self, previous, matrix):
             left = [layer[0]] + left
             newermat += [layer[1:-1]]
         outerlist = previous + top + right + bottom + left
-        return(self.recursSpiralOrder(outerlist, newermat))
+        return(recursSpiralOrder(outerlist, newermat))

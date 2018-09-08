@@ -3,7 +3,7 @@
 # If you can move either one stair or two stairs at a time, how many unique paths to the top of a staircase of n stairs can you take?
 
 
-def climbStairs(self, n):
+def climbStairs(n):
     """
     :type n: int
     :rtype: int
@@ -20,21 +20,21 @@ def climbStairs(self, n):
         ones -= 2
         steps -= 1
         twos += 1
-        retval += self.combinations(steps,twos)
+        retval += combinations(steps,twos)
     
     return(retval)
 
 
-def combinations(self, total, num):
-    x = self.factorial(total)
-    y = self.factorial(total-num)
-    z = self.factorial(num)
+def combinations(total, num):
+    x = factorial(total)
+    y = factorial(total-num)
+    z = factorial(num)
     a = x//(y*z)
     return(a)
     
     
     
-def factorial(self, val):
+def factorial(val):
     
     ret = 1
     

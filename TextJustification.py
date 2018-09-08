@@ -6,7 +6,7 @@
 # Note, my solution will not work if there is a word whose length is longer than the maxwidth
 
 
-def fullJustify(self, words, maxWidth):
+def fullJustify(words, maxWidth):
     """
     :type words: List[str]
     :type maxWidth: int

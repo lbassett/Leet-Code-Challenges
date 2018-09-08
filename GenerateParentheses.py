@@ -7,7 +7,7 @@
 # the second, the third and so on, creating string each string based on where the next left parentheses can go, and
 # keeping track of how many right parentheses can be added at most before the next left parentheses.
 
-def generateParenthesis(self, n):
+def generateParenthesis(n):
     """
     :type n: int
     :rtype: List[str]

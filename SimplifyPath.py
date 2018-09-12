@@ -1,4 +1,5 @@
-# Chalenge: Simplify Path  -- Not Completed Yet
+# Chalenge: Simplify Path
+# Simplify Unix paths by eliminating "..", ".", and changing doubleslashes to singleslashes
 
 
 def simplifyPath(path):
@@ -9,15 +10,31 @@ def simplifyPath(path):
     pathelements = path.split("/")
     
     newpathelements = []
+    numnew=0
     
     doubledots = True
     
-    for x in path elements:
+    onlydots = True
+    
+    for x in pathelements:
         if x != "" and x != ".":
             if x == "..":
-                if doubledots:
-                    newpathelements += [x]
-                else:
+                if numnew >0:
                     newpathelements = newpathelements[:-1]
-            if x != "..":
-                
+                    numnew-=1
+            else:
+                newpathelements+=[x]
+                numnew += 1
+    
+    retpath = ""
+    
+    for y in newpathelements:
+        retpath += "/" + y
+    
+    if retpath == "":
+        return("/")
+    else:
+        return(retpath)
+
+# Time Complexity: O(n), where n is the number of characters in the path
+# Space Complexity: O(n), where n is the number of characters in the path

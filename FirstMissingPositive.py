@@ -23,3 +23,4 @@ def firstMissingPositive(nums):
     
     return(posint)
 
+# Time Complexity: O(n)
